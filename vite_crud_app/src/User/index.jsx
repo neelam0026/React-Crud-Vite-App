@@ -1,15 +1,33 @@
 import React from 'react'
-import UserForm from './UserForm';
+
+// import UserContext from './userStore'; // review
+import UserTable from './UserTable';
+import UserForm from './UserFrom';
 
 const User = () => {
-  return (
-    <>
-      <h1>USER</h1>
-      <h2>USER FORM</h2>
-      <UserForm />
 
-    </>
-  );
+  return ( 
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      
+        <UserForm />
+        <UserTable />
+      </div>
+  )
+
+  // return (
+    
+  //   <UserContext.Provider 
+  //     value={{
+  //       name: 'neelam',
+  //       }}
+  //       >
+  //     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      
+  //       <UserForm />
+  //       <UserTable />
+  //     </div>
+  //     </UserContext.Provider>
+  // );
 };
 
 export default User;
